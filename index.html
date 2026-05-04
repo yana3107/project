@@ -9,52 +9,57 @@
 <body>
     <div class="container">
         <div class="left">
-            <img src="/bg.jpg" alt="Background Image">
+            <img src="./logo.svg" class="logo" alt="logo">
         </div>
      
         <div class="right">
+            <form class="form">
+
             <h2>Get iintoo it today</h2>
             <p class="sub">There is no charge or obligation upon registration.</p>
-            <span class="buttons">
-            <button class="fb">
-                <img src="/facebook.svg" class="icon">
+          
+            <div class="buttons">
+            <button type="button" class="fb">
+                <img src="./facebook.svg" class="icon">
                 Register with Facebook
             </button>
 
-            <button class="in">
-                <img src="/linkedin.svg" class="icon">
+            <button type="button" class="in">
+                <img src="./linkedin.svg" class="icon">
                 Register with LinkedIn
             </button>
-            </span>
+            </div>
 
-            <p class="or">OR</p>
-<span class="inputs">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Phone">
-</span>
+          <div class="divider">OR</div>
 
-            <p class="title">What type of account do you want to create?</p>
-            <div class="radio">
-            <label>
-                <input type="radio" name="type"> Individual
-            </label>
+<div class="fields">
+        <input type="email" placeholder="Email" class="text-input">
+        <input type="text" placeholder="Phone" class="text-input">
+      </div>
 
-            <label>
-                <input type="radio" name="type"> Business
-            </label>
+      <fieldset class="radio-group">
+        <legend>What type of investor are you?</legend>
 
-            <label>
-                <input type="radio" name="type"> IRA
-            </label>
+        <label><input type="radio" name="type"> Individual</label>
+        <label><input type="radio" name="type"> Business</label>
+        <label><input type="radio" name="type"> IRA</label>
+        <label><input type="radio" name="type"> Trust</label>
+      </fieldset>
 
-<label>
-    <input type="radio" name="type"> Trust
-</label>
-<br><br>
+      <div class="terms">
+        <label>
+          <input type="checkbox">
+          I agree to the terms and receiving notifications 
+          <a href="#">View full terms</a>
+        </label>
+      </div>
+
+      <button type="submit" class="create">Create Account</button>
+
+    </form>
+  </div>
+
 </div>
 
-            <button class="create">Create Account</button>
-        </div>
-        </div>
 </body>
 </html>
